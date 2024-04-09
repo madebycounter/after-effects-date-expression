@@ -1,0 +1,13 @@
+{
+    "name": "ae-datetime",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "concat -o expression.js ./src/options.js && minify ./src/datetime.js >> expression.js"
+    },
+    "author": "Counter LLC",
+    "dependencies": {
+        "concat": "^1.0.3",
+        "minify": "^11.1.1",
+        "prettier": "^3.2.5"
+    }
+}

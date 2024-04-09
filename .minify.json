@@ -1,0 +1,9 @@
+{
+    "js": {
+        "mangle": true,
+        "mangleClassNames": true,
+        "removeUnusedVariables": false,
+        "removeConsole": false,
+        "removeUselessSpread": true
+    }
+}
