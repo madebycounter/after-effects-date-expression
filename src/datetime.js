@@ -1,3 +1,5 @@
+const LOCAL_TIMEZONE = -7;
+
 const SECONDS_PER_MINUTE = 60;
 const SECONDS_PER_HOUR = SECONDS_PER_MINUTE * 60;
 const SECONDS_PER_DAY = 24 * SECONDS_PER_HOUR;
@@ -138,7 +140,7 @@ function abbr(str) {
 }
 
 function render(ts, txt) {
-    let dt = getDateTime(ts, -7);
+    let dt = getDateTime(ts, LOCAL_TIMEZONE);
 
     return new String(txt)
         .replaceAll("%a", abbr(dt.dayName))
